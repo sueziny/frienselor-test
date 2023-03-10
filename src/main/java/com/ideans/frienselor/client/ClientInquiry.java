@@ -1,4 +1,4 @@
-package com.ideans.frienselor.entity;
+package com.ideans.frienselor.client;
 
 
 import lombok.Getter;

@@ -1,8 +1,7 @@
-package com.ideans.frienselor.entity;
+package com.ideans.frienselor.client;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AccessLevel;
-import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 

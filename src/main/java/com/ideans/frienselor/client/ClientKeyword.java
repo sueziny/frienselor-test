@@ -1,6 +1,6 @@
-package com.ideans.frienselor.entity;
+package com.ideans.frienselor.client;
 
-import lombok.Builder;
+import com.ideans.frienselor.client.Client;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
