@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/frienselor?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: create                          # create(\uC2DC\uC791\uC2DC \uD14C\uC774\uBE14 \uC0C8\uB85C \uC0DD\uC131), update(\uAE30\uC874 \uB370\uC774\uD130\uC5D0 \uCD94\uAC00), none()
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl    # \uD14C\uC774\uBE14\uC744 \uB9CC\uB4E4 \uB54C, \uBCC0\uC218\uBA85 \uADF8\uB300\uB85C \uD14C\uC774\uBE14\uC5D0 \uB123\uC5B4\uC90C
+      use-new-id-generator-mappings: false       # JPA\uAC00 \uC0AC\uC6A9\uD558\uB294 \uAE30\uBCF8 \uB118\uBC84\uB9C1 \uC804\uB7B5\uC744 \uB530\uB77C\uAC00\uC9C0 \uC54A\uB294\uB2E4. -> DB\uC758 \uB118\uBC84\uB9C1 \uC804\uB7B5\uC744 \uB530\uB77C\uAC10
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
